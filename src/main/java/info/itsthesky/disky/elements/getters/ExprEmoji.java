@@ -23,11 +23,11 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@Name("Emoji / Emote")
+@Name("Get Emoji / Emote")
 @Description({
-        "Get an emoji or an emote from its name, ID or unicode.",
-        "- An emoji is discord-side only, can be used everywhere, and don't have any attached guild.",
-        "- An emote is guild-side only, have a custom long ID and are attached to a guild.",
+        "Get an emoji or an emote from its name, ID or unicode. The differences between emojis and emotes are:",
+        "- An emoji is a default emoji available to anyone on Discord.",
+        "- An emote is a unique emoji in a guild. It has its own custom ID.",
         "It the specified reaction doesn't exist, DiSky will simply return null and say it in console.",
         "We highly recommend the specification of the guild when retrieving an emote, to avoid conflicts with other that potentially have the same name."
 })
