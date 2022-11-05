@@ -18,7 +18,8 @@ import org.jetbrains.annotations.Nullable;
 
 @Name("Move Role Above/Under Role")
 @Description({"Move a specific role above or under another role within the same guild.",
-"The indexes will be updated automatically."})
+"The indexes will be updated automatically.".
+"- You cannot move roles above the bot's highest role!"})
 @Examples("move role {_role} above role with id \"000\"")
 public class MoveRole extends SpecificBotEffect {
 
