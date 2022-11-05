@@ -19,7 +19,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.concurrent.TimeUnit;
 
 @Name("Ban Member")
-@Description({"Bans a member from a guild."})
+@Description({"Bans a member from a guild.",
+"- You can't kick members who are above the bot's role (the bot is technically like a user!)"})
 @Examples({"ban event-member because of \"being lame\" and delete 10 days' worth of messages"})
 
 public class BanMember extends SpecificBotEffect {
